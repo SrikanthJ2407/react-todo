@@ -1,11 +1,12 @@
 import React from "react";
 import Todo from "./Todo";
 
-const TodoList = ({ todos, setTodos }) => {
+const TodoList = ({ todos, setTodos, filterTodos }) => {
   return (
     <div className="todo-container">
       <ul className="todos-list">
-        {todos.map((todo) => (
+         {/* disp the todos  */}
+        {filterTodos.map((todo) => (
           <Todo
             todos = {todos}
             setTodos = { setTodos }
