@@ -5,7 +5,7 @@ const Form = ({ todos, setTodos, inputText, setInputText, setStatus }) => {
     //console.log(e.target.value);
     setInputText(e.target.value);
   };
-  // Logic to submitData
+  // Logic to handle submitData
   const submitTodoHandler =(e) => {
       e.preventDefault();
       setTodos([

@@ -5,6 +5,7 @@ const TodoList = ({ todos, setTodos, filterTodos }) => {
   return (
     <div className="todo-container">
       <ul className="todos-list">
+        
          {/* disp the todos  */}
         {filterTodos.map((todo) => (
           <Todo
